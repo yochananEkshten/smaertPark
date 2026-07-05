@@ -1,0 +1,124 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user1\\source\\repos\\smaertPark\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF420D1-F416-45B2-863D-62F15F4CBA2B}|smaertPark.csproj|c:\\users\\user1\\source\\repos\\smaertpark\\models\\vehicleentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF420D1-F416-45B2-863D-62F15F4CBA2B}|smaertPark.csproj|solutionrelative:models\\vehicleentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF420D1-F416-45B2-863D-62F15F4CBA2B}|smaertPark.csproj|c:\\users\\user1\\source\\repos\\smaertpark\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF420D1-F416-45B2-863D-62F15F4CBA2B}|smaertPark.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF420D1-F416-45B2-863D-62F15F4CBA2B}|smaertPark.csproj|c:\\users\\user1\\source\\repos\\smaertpark\\models\\globalconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF420D1-F416-45B2-863D-62F15F4CBA2B}|smaertPark.csproj|solutionrelative:models\\globalconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user1\\Downloads\\Models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user1\\Downloads\\GlobalConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF420D1-F416-45B2-863D-62F15F4CBA2B}|smaertPark.csproj|c:\\users\\user1\\source\\repos\\smaertpark\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF420D1-F416-45B2-863D-62F15F4CBA2B}|smaertPark.csproj|solutionrelative:models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VehicleEntry.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\source\\repos\\smaertPark\\Models\\VehicleEntry.cs",
+              "RelativeDocumentMoniker": "Models\\VehicleEntry.cs",
+              "ToolTip": "C:\\Users\\user1\\source\\repos\\smaertPark\\Models\\VehicleEntry.cs",
+              "RelativeToolTip": "Models\\VehicleEntry.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvwoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T09:45:43.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GlobalConfig.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\source\\repos\\smaertPark\\Models\\GlobalConfig.cs",
+              "RelativeDocumentMoniker": "Models\\GlobalConfig.cs",
+              "ToolTip": "C:\\Users\\user1\\source\\repos\\smaertPark\\Models\\GlobalConfig.cs",
+              "RelativeToolTip": "Models\\GlobalConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T09:40:40.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Models.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Downloads\\Models.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Models.cs",
+              "ToolTip": "C:\\Users\\user1\\Downloads\\Models.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Models.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T09:28:36.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GlobalConfig.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Downloads\\GlobalConfig.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\GlobalConfig.cs",
+              "ToolTip": "C:\\Users\\user1\\Downloads\\GlobalConfig.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\GlobalConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T09:25:53.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "enums.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\source\\repos\\smaertPark\\Models\\enums.cs",
+              "RelativeDocumentMoniker": "Models\\enums.cs",
+              "ToolTip": "C:\\Users\\user1\\source\\repos\\smaertPark\\Models\\enums.cs",
+              "RelativeToolTip": "Models\\enums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T09:01:00.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\source\\repos\\smaertPark\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\user1\\source\\repos\\smaertPark\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwB0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T10:38:40.352Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
