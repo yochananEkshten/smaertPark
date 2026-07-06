@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("smaertPark")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01ddc6b50069696e53d1445dd1d8040073b3322f")]
 [assembly: System.Reflection.AssemblyProductAttribute("smaertPark")]
 [assembly: System.Reflection.AssemblyTitleAttribute("smaertPark")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
