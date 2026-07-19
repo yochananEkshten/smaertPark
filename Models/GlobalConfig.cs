@@ -7,7 +7,8 @@ namespace smaertPark.Models
     [Table("GlobalConfig")]
     public class GlobalConfig
     {
-        ץ
+        [Key]
+        public int Id { get; set; }
         // פרטי החניון
         [MaxLength(100)]
         public string ParkingLotName { get; set; }       // שם החניון

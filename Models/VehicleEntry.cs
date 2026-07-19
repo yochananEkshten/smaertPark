@@ -33,6 +33,10 @@ namespace smaertPark.Models
         // Navigation Property
         [ForeignKey("SpotId")]
         public ParkingSpot Spot { get; set; }
+        public int? DriverId { get; set; }
+
+        [ForeignKey("DriverId")]
+        public Driver Driver { get; set; }
     }
 
 }

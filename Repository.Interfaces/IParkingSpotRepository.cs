@@ -1,0 +1,17 @@
+﻿using smaertPark.Models;
+
+namespace smaertPark.Repository.Interfaces
+{
+    public interface IParkingSpotRepository
+    {
+        List<ParkingSpot> GetAll();
+        ParkingSpot GetById(int id);
+        List<ParkingSpot> GetAvailable();
+        List<ParkingSpot> GetByFloor(int floor);
+        void Update(ParkingSpot spot);
+        void UpdateStatus(int spotId, SpotStatus status, VehicleEntry? vehicle);
+    }
+}
+
+
+    

@@ -25,7 +25,7 @@ namespace smaertPark.Models
         [MaxLength(20)]
         public string Password { get; set; }
 
-        public Role RoleId { get; set; } 
+        public Role Role { get; set; } 
 
         public int RecordStatus { get; set; } = 1; 
 
