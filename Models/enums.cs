@@ -1,4 +1,4 @@
-﻿namespace smaertPark.Models
+﻿namespace smartPark.Models
 {
     public enum Role
     {

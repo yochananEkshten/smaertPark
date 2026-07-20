@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using smaertPark.Data;
+using smartPark.Data;
 
 #nullable disable
 
-namespace smaertPark.Migrations
+namespace smartPark.Migrations
 {
     [DbContext(typeof(ParkingDbContext))]
     partial class ParkingDbContextModelSnapshot : ModelSnapshot

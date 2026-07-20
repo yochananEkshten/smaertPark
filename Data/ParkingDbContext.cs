@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using smaertPark.Models;
+using smartPark.Models;
 using System.Collections.Generic;
 
 using System.Reflection.Emit;
 
-namespace smaertPark.Data
+namespace smartPark.Data
 {
     public class ParkingDbContext : DbContext
     {

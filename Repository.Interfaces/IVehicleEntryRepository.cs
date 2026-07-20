@@ -1,7 +1,7 @@
 ﻿
-using smaertPark.Models;
+using smartPark.Models;
 
-namespace smaertPark.Repository.Interfaces
+namespace smartPark.Repository.Interfaces
 {
     public interface IVehicleEntryRepository
     {

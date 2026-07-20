@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace smaertPark.Models
+namespace smartPark.Models
 {
     
     public class User

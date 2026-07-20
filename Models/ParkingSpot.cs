@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 
 
-namespace smaertPark.Models
+namespace smartPark.Models
 {
     [Table("ParkingSpot")]
     public class ParkingSpot

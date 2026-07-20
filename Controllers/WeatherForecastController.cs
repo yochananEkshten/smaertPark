@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace smaertPark.Controllers
+namespace smartPark.Controllers
 {
     [ApiController]
     [Route("[controller]")]

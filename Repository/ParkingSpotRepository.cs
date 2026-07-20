@@ -1,10 +1,10 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
-using smaertPark.Data;
-using smaertPark.Models;
-using smaertPark.Repository.Interfaces;
+using smartPark.Data;
+using smartPark.Models;
+using smartPark.Repository.Interfaces;
 
-namespace smaertPark.Repository
+namespace smartPark.Repository
 {
     public class ParkingSpotRepository : IParkingSpotRepository
     {

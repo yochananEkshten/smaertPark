@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using smaertPark.Data;
+using smartPark.Data;
 
 
 var builder = WebApplication.CreateBuilder(args);

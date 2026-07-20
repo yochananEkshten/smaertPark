@@ -1,4 +1,4 @@
-namespace smaertPark
+namespace smartPark
 {
     public class WeatherForecast
     {
