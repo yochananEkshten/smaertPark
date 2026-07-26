@@ -68,7 +68,7 @@ namespace smartPark.Repository
         }
 
         // עדכון סטטוס מקום + רכב
-        public void UpdateStatus(int spotId, SpotStatus status, VehicleEntry? vehicle)
+        public void UpdateStatus(int spotId, SpotStatus status, int? vehicle)
         {
             using (ParkingDbContext context = _factory.CreateDbContext())
             {
@@ -76,7 +76,7 @@ namespace smartPark.Repository
                 if (spot != null)
                 {
                     spot.StatusId = status;
-                    spot.Vehicle = vehicle;
+                    spot.VehicleId = vehicle;
                     spot.UpdatedAt = DateTime.UtcNow;
                     context.SaveChanges();
                 }

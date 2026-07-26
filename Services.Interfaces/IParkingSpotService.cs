@@ -8,7 +8,7 @@ namespace smartPark.Services.Interfaces
         List<ParkingSpot> GetAvailable();
         List<ParkingSpot> GetByFloor(int floor);
         ParkingSpot GetById(int id);
-        ParkingSpot AssignSpot(int vehicleId);
+        ParkingSpot AssignSpot(int vehicle);
         void FreeSpot(int spotId);
     }
 }

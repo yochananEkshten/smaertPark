@@ -20,7 +20,9 @@ namespace smartPark.Models
 
         [Required]
         public SpotStatus StatusId { get; set; }  // פנוי / תפוס / מושבת
+        public int? VehicleId { get; set; }
 
+        [ForeignKey("VehicleId")]
         public VehicleEntry? Vehicle { get; set; } // איזה רכב חונה כרגע (null אם פנוי)
 
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;

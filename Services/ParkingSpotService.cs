@@ -41,7 +41,7 @@ namespace smartPark.Services
         }
 
         // הקצאת מקום לרכב – מחזיר את המקום שהוקצה
-        public ParkingSpot AssignSpot(VehicleEntry vehicle)
+        public ParkingSpot AssignSpot(int vehicle)
         {
             var availableSpots = _parkingSpotRepository.GetAvailable();
             if (!availableSpots.Any())

@@ -61,7 +61,7 @@ namespace smartPark.Services
             }
 
             // הקצה מקום חניה
-            var vehicle = new Models.VehicleEntry
+            var vehicle = new VehicleEntry
             {
                 PlateNumber = licensePlate,
                 DriverId = driverId,

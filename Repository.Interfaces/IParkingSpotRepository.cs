@@ -9,7 +9,7 @@ namespace smartPark.Repository.Interfaces
         List<ParkingSpot> GetAvailable();
         List<ParkingSpot> GetByFloor(int floor);
         void Update(ParkingSpot spot);
-        void UpdateStatus(int spotId, SpotStatus status, VehicleEntry? vehicle);
+        void UpdateStatus(int spotId, SpotStatus status, int? vehicle);
     }
 }
 
