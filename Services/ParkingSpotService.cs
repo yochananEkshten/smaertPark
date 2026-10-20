@@ -3,16 +3,22 @@ using smartPark.Models;
 using smartPark.Repository.Interfaces;
 
 
+
 namespace smartPark.Services
 {
     public class ParkingSpotService : IParkingSpotService
     {
         private readonly IParkingSpotRepository _parkingSpotRepository;
+        private readonly IGlobalConfigService _globalConfigService;
         private readonly ILogger<ParkingSpotService> _logger;
 
-        public ParkingSpotService(IParkingSpotRepository parkingSpotRepository, ILogger<ParkingSpotService> logger)
+        public ParkingSpotService(
+            IParkingSpotRepository parkingSpotRepository,
+            IGlobalConfigService globalConfigService,
+            ILogger<ParkingSpotService> logger)
         {
             _parkingSpotRepository = parkingSpotRepository;
+            _globalConfigService = globalConfigService;
             _logger = logger;
         }
 
@@ -60,6 +66,73 @@ namespace smartPark.Services
         public void FreeSpot(int spotId)
         {
             _parkingSpotRepository.UpdateStatus(spotId, SpotStatus.Available, null);
+        }
+
+        // יצירת מקומות חניה לפי GlobalConfig (TotalSpots, Floors)
+        // פעולה חד-פעמית: אם כבר יש spots בטבלה – זורקת שגיאה ולא יוצרת כפילויות
+        public List<ParkingSpot> GenerateSpots()
+        {
+            if (_parkingSpotRepository.Any())
+            {
+                _logger.LogWarning("GenerateSpots was called, but parking spots already exist");
+                throw new InvalidOperationException(
+                    "כבר קיימים מקומות חניה במערכת. יש למחוק אותם קודם אם רוצים ליצור מחדש.");
+            }
+
+            var config = _globalConfigService.Get();
+            if (config == null)
+            {
+                throw new InvalidOperationException("לא נמצאה הגדרת GlobalConfig – אי אפשר לייצר מקומות.");
+            }
+
+            if (config.TotalSpots <= 0 || config.Floors <= 0)
+            {
+                throw new InvalidOperationException("TotalSpots ו-Floors ב-GlobalConfig חייבים להיות גדולים מ-0.");
+            }
+
+            var spots = new List<ParkingSpot>();
+
+            // חלוקה שווה בין הקומות; השארית (אם TotalSpots לא מתחלק ב-Floors) מתווספת לקומות הראשונות
+            int baseSpotsPerFloor = config.TotalSpots / config.Floors;
+            int remainder = config.TotalSpots % config.Floors;
+
+            for (int floor = 1; floor <= config.Floors; floor++)
+            {
+                int spotsOnThisFloor = baseSpotsPerFloor + (floor <= remainder ? 1 : 0);
+
+                for (int index = 1; index <= spotsOnThisFloor; index++)
+                {
+                    spots.Add(new ParkingSpot
+                    {
+                        SpotNumber = $"{floor}-{index}",
+                        Floor = floor,
+                        StatusId = SpotStatus.Available
+                    });
+                }
+            }
+
+            _parkingSpotRepository.AddRange(spots);
+            _logger.LogInformation($"Generated {spots.Count} parking spots across {config.Floors} floors");
+
+            return spots;
+        }
+
+        // הוספת מקום בודד (StatusId מגיע מה-request – מאפשר גם להוסיף מקום כ-Disabled ישירות)
+        public int Add(ParkingSpot spot)
+        {
+            return _parkingSpotRepository.Add(spot);
+        }
+
+        // עדכון מקום חניה
+        public void Update(ParkingSpot spot)
+        {
+            _parkingSpotRepository.Update(spot);
+        }
+
+        // מחיקת מקום חניה
+        public void Delete(int id)
+        {
+            _parkingSpotRepository.Delete(id);
         }
     }
 }

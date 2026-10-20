@@ -82,6 +82,55 @@ namespace smartPark.Repository
                 }
             }
         }
+
+
+        public bool Any()
+        {
+            using (ParkingDbContext context = _factory.CreateDbContext())
+            {
+                return context.ParkingSpots.Any();
+            }
+        }
+
+
+        public int Add(ParkingSpot spot)
+        {
+            using (ParkingDbContext context = _factory.CreateDbContext())
+            {
+                spot.UpdatedAt = DateTime.UtcNow;
+                context.ParkingSpots.Add(spot);
+                context.SaveChanges();
+                return spot.Id;
+            }
+        }
+
+        
+        public void AddRange(List<ParkingSpot> spots)
+        {
+            using (ParkingDbContext context = _factory.CreateDbContext())
+            {
+                foreach (var spot in spots)
+                {
+                    spot.UpdatedAt = DateTime.UtcNow;
+                }
+                context.ParkingSpots.AddRange(spots);
+                context.SaveChanges();
+            }
+        }
+
+     
+        public void Delete(int id)
+        {
+            using (ParkingDbContext context = _factory.CreateDbContext())
+            {
+                var spot = context.ParkingSpots.FirstOrDefault(p => p.Id == id);
+                if (spot != null)
+                {
+                    context.ParkingSpots.Remove(spot);
+                    context.SaveChanges();
+                }
+            }
+        }
     }
 }
 
